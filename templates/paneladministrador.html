@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+            <div class="container">
+    
+                <!--Section: Jumbotron-->
+                <section class="card orange wow fadeIn" id="intro">
+    
+                    <!-- Content -->
+                    <div class="card-body text-white text-center py-5 px-5 my-5">
+    
+                        <h1 class="mb-4">
+                            <strong>Automoviles</strong>
+                        </h1>
+                    </div>
+                    <!-- Content -->
+                    
+                </section>
+                <!--Section: Jumbotron-->
+
+<div class="row">
+    <div class="col-md-12">
+            <hr class="mb-5 orange">
+        <div class="card card-body">
+            <form action="/agregarautomovil" method="POST">
+                <input class="col-md-12 form-control" type="text" name="placa" placeholder="Placa">
+                <p></p>
+                <input class="col-md-12 form-control" type="text" name="modelo" placeholder="Modelo">
+                <p></p>
+                <input class="col-md-12 form-control" type="text" name="marca" placeholder="Marca">
+                <p></p>
+                <input class="col-md-12 form-control type="text" name="linea" placeholder="Linea">
+                <p></p>
+                <input class="col-md-12 form-control" type="text" name="color" placeholder="Color">
+                <p></p>
+                <div class="col-md-12 btn-group btn-group-justified">
+                        <button class="btn btn-primary" type="submit">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+            <hr class="mb-5 orange">
+
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success alert-dismissible fade show col-md-12" role="alert">
+                    {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+            
+        <table class="table table table-striped table-dark">
+            <thead> 
+                <tr class="blue text-center">
+                    <td><strong>Placa</strong></td>
+                    <td><strong>Modelo</strong></td>
+                    <td><strong>Marca</strong></td>
+                    <td><strong>Linea</strong></td>
+                    <td><strong>Color</strong></td>
+                    <td><strong>Operaciones</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for automovil in automoviles%}
+                    <tr>
+                        <td>{{ automovil.0 }}</td>
+                        <td>{{ automovil.1 }}</td>
+                        <td>{{ automovil.2 }}</td>
+                        <td>{{ automovil.3 }}</td>
+                        <td>{{ automovil.4 }}</td>
+                        <td class="text-center">
+                            <a href="/editarautomovil/{{ automovil.0 }}" class="btn btn-secondary">Editar</a>
+                            <a href="/eliminarautomovil/{{ automovil.0 }}" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

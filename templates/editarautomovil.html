@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<hr class="mb-5 orange">
+
+<div class="col-md-12">
+        <hr class="mb-5 orange">
+    <div class="card card-body">
+        <form action="/actualizarautomovil/{{ automovil.0 }}" method="POST">
+            <input class="col-md-12 form-control" type="text" name="placa" placeholder="Placa" value="{{ automovil.0}}">
+            <p></p>
+            <input class="col-md-12 form-control" type="text" name="modelo" placeholder="Modelo"  value="{{ automovil.1}}">
+            <p></p>
+            <input class="col-md-12 form-control" type="text" name="marca" placeholder="Marca" value="{{ automovil.2}}">
+            <p></p>
+            <input class="col-md-12 form-control type="text" name="linea" placeholder="Linea" value="{{ automovil.3}}">
+            <p></p>
+            <input class="col-md-12 form-control" type="text" name="color" placeholder="Color" value="{{ automovil.4}}">
+            <p></p>
+            <div class="col-md-12 btn-group btn-group-justified">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

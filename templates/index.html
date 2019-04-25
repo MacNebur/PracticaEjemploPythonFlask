@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Taller automotriz</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="#">
+                    <strong class="orange-text">Taller automotriz</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link waves-effect" href="#inicio">Inicio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="#ubicacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="/paneladministrador" class="nav-link waves-effect">
+                                <i class="fa fa-user"> Iniciar sesión </i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+        <div class="container">
+                <a id="inicio"/>
+
+            <!--Section: Jumbotron-->
+            <section class="card orange wow fadeIn" id="intro">
+
+                <!-- Content -->
+                <div class="card-body text-white text-center py-5 px-5 my-5">
+
+                    <h1 class="mb-4">
+                        <strong>¿Tienes alguna falla en tu automovil?</strong>
+                    </h1>
+                    <p>
+                        <strong>En nuestro taller mecanico podras encontrar la solución a tu problema</strong>
+                    </p>
+                    <p class="mb-4">
+                        <strong>
+                            Somos un taller mecanico preocupado por el bienestar de tu familia y automovil.
+                        </strong>
+                    </p>
+                </div>
+                <!-- Content -->
+            </section>
+            <!--Section: Jumbotron-->
+
+            <!--Section: Cards-->
+            <section class="pt-5">
+
+                <!-- Heading & Description -->
+                <div class="wow fadeIn">
+                    <!--Section heading-->
+                    <a id="servicios"/>
+                    <h2 class="h1 text-center mb-5">Servicios</h2>
+                    <!--Section description-->
+                    <p class="text-center">A continuacion se muestran los diferentes servicios que realizamos dentro de nuestras instalaciones. </p>
+                    <p class="text-center mb-5 pb-5">
+                        Si tu vehiculo requiere alguno de estos servicios no dudes en contactarnos. En la parte superior de esta pagina.
+                    </p>
+                </div>
+                <!-- Heading & Description -->
+
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/preventivo.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Preventivo</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/correctivo.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Correctivo</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/electrico.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Electrico</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/suspension.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Suspención</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/alineacion.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Alineación y balanceo</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/frenos.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Revisión, limpieza y ajuste de frenos</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5 orange">
+
+                <!--Grid row-->
+                <div class="row mt-3 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-xl-4 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="{{ url_for('static', filename='img/general.jpg') }}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                        <h3 class="mb-3 font-weight-bold dark-grey-text">
+                            <strong>Servicios mecanicos en general</strong>
+                        </h3>
+                        <p class="grey-text">Este servicio se realiza con la intensión de encontrar alguna falla que pueda impedir un buen funcionamiento de tu automovil</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="mb-5 orange">
+
+                <!--Section: Jumbotron-->
+                <section class="card white wow fadeIn" id="intro">
+
+                        <!-- Content -->
+                        <div class="card-body text-black text-left py-5 px-5 my-5">
+                            <a id="ubicacion"/>
+                            <h1 class="mb-4">
+                                <strong>Ubicación</strong>
+                            </h1>
+                            <p>
+                                Calle camelia #13, Colonia salud, C.P. 91070
+                            </p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.0756146298769!2d-96.93632577078805!3d19.528624163134133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db2de23738b679%3A0xc287924e366c7f7!2sC+Camelia+13%2C+Salud%2C+91070+Xalapa-Enr%C3%ADquez%2C+Ver.!5e0!3m2!1ses!2smx!4v1555190748976!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!-- Content -->
+                    </section>
+                    <!--Section: Jumbotron-->
+
+                    <!--Section: Cards-->
+                    <section class="pt-5">
+
+                        <!-- Heading & Description -->
+                        <div class="wow fadeIn">
+                            <a id="contacto"/>
+                            <!--Section heading-->
+                            <h2 class="h1 text-left mb-5">Contacto</h2>
+                            <!--Section description-->
+                            <p><strong>Whatsapp: </strong>2288448899</p>
+                            <p><strong>Telefono: </strong>2288448899</p>
+                            <p><strong>Correo electronico: </strong>tallermecanico@gmail.com</p>
+                            <p class="text-left"> 
+                                <a class="btn btn-primary" href="mailto:tallermecanico@gmail.com">Click para enviar un correo electronico</a>
+                            </p>
+                        </div>
+                        <!-- Heading & Description -->
+                    
+                    </section>
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> Taller automotriz </a>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>
